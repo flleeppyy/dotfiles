@@ -1,0 +1,9 @@
+*
+!.gitignore
+!.profile
+!.tmux.conf
+!.bashrc
+!.yarnrc
+!.face
+!.face.icon
+.
