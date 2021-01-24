@@ -132,7 +132,10 @@ alias ownvscode="sudo chown -R $(whoami) /usr/share/code;"
 alias owncode="sudo chown -R $(whoami) /usr/share/code;"
 alias development="cd /media/chen/storage/development"
 alias tmux="TERM=screen-256color-bce tmux"
-
+alias reloadbashrc="source ~/.bashrc"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ANDROID_SDK_ROOT=/home/chen/android-sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools
