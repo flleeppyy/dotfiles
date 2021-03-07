@@ -118,18 +118,21 @@ fi
 
 
 alias please="sudo"
+alias plz="sudo"
 alias plsupdate="sudo apt update"
 alias updatepls="sudo apt update"
 alias aptupdate="sudo apt update"
 alias plsupgrade="sudo apt upgrade"
 alias upgradepls="sudo apt upgrade"
+alias fullupgradepls="sudo apt update && sudo apt upgrade"
 alias aptinstall="sudo apt install"
 alias fixbroken="sudo apt --fix-broken install"
+alias autoremove="sudo apt autoremove"
 alias aptpurge="sudo apt purge"
 alias beans="echo mmmmm yummy beans"
-alias chen="echo CHEN IS FUCKING CUTE AND ADORABLE AND YOU SHOULD NOT GO AGAINST THAT.... ALSO SHE IS FUCKING CUTE WHEN SHES GETTING FUCKED"
+alias chen="echo CHEN IS FUCKING CUTE AND ADORABLE"
 alias cum="echo u cant even think of what to type, stop typing cum for no reason, and stop naming your variables cum"
-alias cummies="echo no. stop"
+alias cummies="echo no. stop, horny fuck"
 alias ownvscode="sudo chown -R $(whoami) /usr/share/code;"
 alias owncode="sudo chown -R $(whoami) /usr/share/code;"
 alias development="cd /media/chen/storage/development"
@@ -142,3 +145,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export ANDROID_SDK_ROOT=/home/chen/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
