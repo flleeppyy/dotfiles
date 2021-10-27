@@ -140,6 +140,7 @@ alias storage="cd /media/chen/storage"
 alias tmux="TERM=screen-256color-bce tmux"
 alias reloadbashrc="source ~/.bashrc"
 alias snano="sudo nano"
+alias sshhosts="sed -rn ‘s/^\s*Host\s+(.*)\s*/\1/ip’ ~/.ssh/ssh_config"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
