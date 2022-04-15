@@ -140,7 +140,11 @@ alias storage="cd /media/chen/storage"
 alias tmux="TERM=screen-256color-bce tmux"
 alias reloadbashrc="source ~/.bashrc"
 alias snano="sudo nano"
-alias sshhosts="sed -rn ‘s/^\s*Host\s+(.*)\s*/\1/ip’ ~/.ssh/ssh_config"
+alias dpkgi="sudo dpkg -i"
+alias turnonwifi="nmcli r wifi on"
+alias turnoffwifi="nmcli r wifi off"
+alias ssh-hosts="grep -P \"^Host ([^*]+)$\" $HOME/.ssh/config | sed 's/Host //'"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -149,3 +153,4 @@ export ANDROID_SDK_ROOT=/home/chen/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export MESA_GL_VERSION_OVERRIDE=4.4
