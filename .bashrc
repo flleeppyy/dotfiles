@@ -144,7 +144,7 @@ alias dpkgi="sudo dpkg -i"
 alias turnonwifi="nmcli r wifi on"
 alias turnoffwifi="nmcli r wifi off"
 alias ssh-hosts="grep -P \"^Host ([^*]+)$\" $HOME/.ssh/config | sed 's/Host //'"
-
+alias wg0="sudo wg-quick up wg0"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -153,4 +153,10 @@ export ANDROID_SDK_ROOT=/home/chen/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export MESA_GL_VERSION_OVERRIDE=4.4
+#export MESA_GL_VERSION_OVERRIDE=4.4
+
+# pnpm
+export PNPM_HOME="/home/chen/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+. "$HOME/.cargo/env"
