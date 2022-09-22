@@ -131,8 +131,6 @@ alias autoremove="sudo apt autoremove"
 alias aptpurge="sudo apt purge"
 alias beans="echo mmmmm yummy beans"
 alias chen="echo CHEN IS FUCKING CUTE AND ADORABLE"
-alias cum="echo u cant even think of what to type, stop typing cum for no reason, and stop naming your variables cum"
-alias cummies="echo no. stop, horny fuck"
 alias ownvscode="sudo chown -R $(whoami) /usr/share/code;"
 alias owncode="sudo chown -R $(whoami) /usr/share/code;"
 alias development="cd /media/chen/storage/development"
@@ -154,6 +152,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 #export MESA_GL_VERSION_OVERRIDE=4.4
+export PATH="$PATH:/usr/share/flutter/bin"
 
 # pnpm
 export PNPM_HOME="/home/chen/.local/share/pnpm"
