@@ -129,8 +129,6 @@ alias aptinstall="sudo apt install"
 alias fixbroken="sudo apt --fix-broken install"
 alias autoremove="sudo apt autoremove"
 alias aptpurge="sudo apt purge"
-alias beans="echo mmmmm yummy beans"
-alias chen="echo CHEN IS FUCKING CUTE AND ADORABLE"
 alias ownvscode="sudo chown -R $(whoami) /usr/share/code;"
 alias owncode="sudo chown -R $(whoami) /usr/share/code;"
 alias development="cd /media/chen/storage/development"
@@ -143,11 +141,14 @@ alias turnonwifi="nmcli r wifi on"
 alias turnoffwifi="nmcli r wifi off"
 alias ssh-hosts="grep -P \"^Host ([^*]+)$\" $HOME/.ssh/config | sed 's/Host //'"
 alias wg0="sudo wg-quick up wg0"
+# My scripts
+export PATH=$PATH:$HOME/scripts
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export ANDROID_SDK_ROOT=/home/chen/android-sdk
+export ANDROID_SDK_ROOT=$HOME/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -155,7 +156,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$PATH:/usr/share/flutter/bin"
 
 # pnpm
-export PNPM_HOME="/home/chen/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 . "$HOME/.cargo/env"
+
+
