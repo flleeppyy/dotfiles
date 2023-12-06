@@ -1,8 +1,10 @@
 *
 !.gitignore
+!.gitconfig
 !.profile
 !.tmux.conf
 !.bashrc
 !.face
+!.tilix-settings.dconf
 !.face.icon
 !/scripts/
