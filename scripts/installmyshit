@@ -4,7 +4,7 @@ sudo apt upgrade -y
 sudo apt install neofetch ncdu python3 python3-pip nodejs npm curl \
 openjdk-8-jre openjdk-11-jre openjdk-17-jre steam-installer gparted \
 wine-stable winetricks git gh wireguard font-manager tmux yubikey-manager \
-google-android-platform-tools-installer tilix dconf-cli
+tilix dconf-cli
 
 # update default terminal emulator for alternatives
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/tilix 1
