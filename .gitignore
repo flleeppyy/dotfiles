@@ -7,4 +7,5 @@
 !.face
 !.tilix-settings.dconf
 !.face.icon
-!/scripts/
+!/scripts
+!/scripts/*
