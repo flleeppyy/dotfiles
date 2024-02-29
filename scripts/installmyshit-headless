@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 sudo apt update
 sudo apt upgrade -y
-sudo apt install neofetch ncdu python3 python3-pip nodejs npm curl \
-openjdk-8-jre-headless openjdk-11-jre-headless openjdk-17-jre-headless git gh wireguard tmux
+sudo apt install neofetch ncdu python3 python3-pip curl \
+openjdk-8-jre-headless openjdk-11-jre-headless openjdk-17-jre-headless git gh wireguard tmux --no-install-recommends
 
 # Install NVM and install the latest node version
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
@@ -15,7 +15,7 @@ nvm install --lts
 npm install -g pnpm
 
 # restore configs
-~/scripts/startrestore.sh
+#~/scripts/startrestore.sh
 
 # Finished!
 echo "Finished!"
