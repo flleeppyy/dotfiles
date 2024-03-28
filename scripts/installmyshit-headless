@@ -7,6 +7,12 @@ openjdk-8-jre-headless openjdk-11-jre-headless openjdk-17-jre-headless git gh wi
 # Install NVM and install the latest node version
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
+cd ~
+mv .zshrc .zshrc.lol
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm .zshrc
+mv .zshrc.lol .zshrc
+
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 

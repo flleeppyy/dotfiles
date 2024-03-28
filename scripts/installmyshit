@@ -10,6 +10,13 @@ tilix dconf-cli --no-install-recommends
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/tilix 1
 
 # TODO: remove konsole keybinding to open new terminal window and replace it with Tilix
+cd ~
+mv .zshrc .zshrc.lol
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm .zshrc
+mv .zshrc.lol .zshrc
+
+chsh -s /usr/bin/zsh
 
 # Install NVM and install the latest node version
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
